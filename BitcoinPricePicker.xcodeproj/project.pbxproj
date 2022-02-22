@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45275ADC27937EFB00530F82 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45275ADB27937EFB00530F82 /* CoinData.swift */; };
+		45275ADE2793913700530F82 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45275ADD2793913700530F82 /* CoinModel.swift */; };
 		4572AF54278F8E6900DE08CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4572AF53278F8E6900DE08CC /* AppDelegate.swift */; };
 		4572AF56278F8E6900DE08CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4572AF55278F8E6900DE08CC /* SceneDelegate.swift */; };
-		4572AF58278F8E6900DE08CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4572AF57278F8E6900DE08CC /* ViewController.swift */; };
+		4572AF58278F8E6900DE08CC /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4572AF57278F8E6900DE08CC /* CoinViewController.swift */; };
 		4572AF5B278F8E6900DE08CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4572AF59278F8E6900DE08CC /* Main.storyboard */; };
 		4572AF5D278F8E6900DE08CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4572AF5C278F8E6900DE08CC /* Assets.xcassets */; };
 		4572AF60278F8E6900DE08CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4572AF5E278F8E6900DE08CC /* LaunchScreen.storyboard */; };
+		4572AF6B278F8ECE00DE08CC /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4572AF6A278F8ECE00DE08CC /* CoinManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45275ADB27937EFB00530F82 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		45275ADD2793913700530F82 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		4572AF50278F8E6900DE08CC /* BitcoinPricePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinPricePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4572AF53278F8E6900DE08CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4572AF55278F8E6900DE08CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4572AF57278F8E6900DE08CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4572AF57278F8E6900DE08CC /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
 		4572AF5A278F8E6900DE08CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4572AF5C278F8E6900DE08CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4572AF5F278F8E6900DE08CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4572AF61278F8E6900DE08CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4572AF6A278F8ECE00DE08CC /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				4572AF53278F8E6900DE08CC /* AppDelegate.swift */,
 				4572AF55278F8E6900DE08CC /* SceneDelegate.swift */,
-				4572AF57278F8E6900DE08CC /* ViewController.swift */,
-				4572AF59278F8E6900DE08CC /* Main.storyboard */,
+				4572AF69278F8E9400DE08CC /* Model */,
+				4572AF68278F8E8900DE08CC /* Controller */,
+				4572AF67278F8E7800DE08CC /* View */,
 				4572AF5C278F8E6900DE08CC /* Assets.xcassets */,
-				4572AF5E278F8E6900DE08CC /* LaunchScreen.storyboard */,
 				4572AF61278F8E6900DE08CC /* Info.plist */,
 			);
 			path = BitcoinPricePicker;
+			sourceTree = "<group>";
+		};
+		4572AF67278F8E7800DE08CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4572AF59278F8E6900DE08CC /* Main.storyboard */,
+				4572AF5E278F8E6900DE08CC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4572AF68278F8E8900DE08CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4572AF57278F8E6900DE08CC /* CoinViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4572AF69278F8E9400DE08CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4572AF6A278F8ECE00DE08CC /* CoinManager.swift */,
+				45275ADB27937EFB00530F82 /* CoinData.swift */,
+				45275ADD2793913700530F82 /* CoinModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4572AF58278F8E6900DE08CC /* ViewController.swift in Sources */,
+				4572AF6B278F8ECE00DE08CC /* CoinManager.swift in Sources */,
+				4572AF58278F8E6900DE08CC /* CoinViewController.swift in Sources */,
+				45275ADC27937EFB00530F82 /* CoinData.swift in Sources */,
 				4572AF54278F8E6900DE08CC /* AppDelegate.swift in Sources */,
+				45275ADE2793913700530F82 /* CoinModel.swift in Sources */,
 				4572AF56278F8E6900DE08CC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +322,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 45YKL4BVGW;
@@ -314,7 +349,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 45YKL4BVGW;
